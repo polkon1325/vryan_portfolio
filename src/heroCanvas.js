@@ -94,7 +94,7 @@ const canvasDots = function () {
 
   function Dot() {
     this.x = Math.random() * canvas.width;
-    this.y = Math.random() * canvas.height;
+    this.y = Math.random() * canvas.innerHeight;
 
     this.vx = -0.5 + Math.random();
     this.vy = -0.5 + Math.random();
@@ -102,6 +102,17 @@ const canvasDots = function () {
     this.radius = Math.random() * 1.5;
 
     // this.colour = 'hsl(' + 360 * Math.random() + ', 50%, 50%)';
+    this.colour = colorDot[Math.floor(Math.random() * colorDot.length)];
+
+    if (window.innerWidth <= 600) {
+    this.y = Math.random() * window.innerHeight; // full vertical coverage
+    } else {
+      this.y = Math.random() * canvas.height;
+    }
+
+    this.vx = -0.5 + Math.random();
+    this.vy = -0.5 + Math.random();
+    this.radius = Math.random() * 1.5;
     this.colour = colorDot[Math.floor(Math.random() * colorDot.length)];
   }
 
