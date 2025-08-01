@@ -1,5 +1,5 @@
-const canvasDots = function () {
-  const canvas = document.getElementById('dot_link'),
+const canvasDotsSecond = function () {
+  const canvas = document.getElementById('dots'),
     ctx = canvas.getContext('2d'),
     colorDot = [
       'rgb(81, 162, 233)',
@@ -27,67 +27,18 @@ const canvasDots = function () {
   const windowSize = window.innerWidth;
   let dots;
 
-  if (windowSize > 1600) {
+  if (windowSize > 4000) {
     dots = {
       nb: 600, // number of particles
       distance: 70, // max distance between particles for them to link
-      d_radius: 300, // radius from mouse location that particles will link
-      array: [],
-    };
-  } else if (windowSize > 1300) {
-    dots = {
-      nb: 575,
-      distance: 60,
-      d_radius: 280,
-      array: [],
-    };
-  } else if (windowSize > 1100) {
-    dots = {
-      nb: 500,
-      distance: 55,
-      d_radius: 250,
-      array: [],
-    };
-  } else if (windowSize > 800) {
-    dots = {
-      nb: 350,
-      distance: 50,
-      d_radius: 400,
-      array: [],
-    };
-  } else if (windowSize > 700) {
-    dots = {
-      nb: 225,
-      distance: 45,
-      d_radius: 300,
-      array: [],
-    }; 
-  } else if (windowSize > 600) {
-    dots = {
-      nb: 200,
-      distance: 60,
-      d_radius: 150,
-      array: [],
-    };
-  } else if (windowSize > 650) {
-    dots = {
-      nb: 400,
-      distance: 50,
-      d_radius: 185,
-      array: [],
-    };
-  } else if (windowSize > 500) {
-    dots = {
-      nb: 250,
-      distance: 20,
-      d_radius: 60,
+      d_radius: 0, // radius from mouse location that particles will link
       array: [],
     };
   } else {
     dots = {
-      nb: 130,
-      distance: 35,
-      d_radius: 300,
+      nb: 500,
+      distance: 0,
+      d_radius: 0,
       array: [],
     };
   }
@@ -278,4 +229,4 @@ const canvasDots = function () {
 
 };
 
-canvasDots();
+canvasDotsSecond();

@@ -15,9 +15,9 @@
   </nav>
 
   <!-- Home Section-->
-  <section class="h-screen w-screen px-6 mt-10 flex flex-col justify-center ">
+  <section class="h-screen w-screen p-6 flex flex-col justify-center">
     
-    <canvas class="absolute top-0 left-0 -z-10"></canvas>
+    <canvas class="absolute top-0 left-0 -z-10" id="dot_link"></canvas>
 
     <!-- container -->
     <div class="space-y-6">
@@ -35,7 +35,7 @@
 
       <!-- Buttons -->
       <div class="flex justify-center">
-        <button class="bg-gray-500 px-4 py-2 rounded-full text-white">Download CV</button>
+        <button class="bg-white px-4 py-2 rounded-full text-neutral-900">Download CV</button>
       </div>
 
       <!-- Links -->
@@ -48,92 +48,157 @@
 
 
   <!-- About Me Section-->
-  <section class="h-screen px-6 pb-6 mt-10">
+  <section class="h-screen w-screen px-6 pb-6">
+
+    <canvas class="absolute top-0 left-0 w-full h-full"></canvas>
 
     <!-- container -->
     <div class="space-y-6">
 
+      <!-- line -->
+      <div class="flex justify-center -my-3 pt-9">
+        <div class="w-[0.5px] h-16 bg-white opacity-25"></div>
+      </div>
+
+      <!-- circle w/ number -->
+      <div class="flex justify-center">
+        <div class="h-10 w-10 rounded-full bg-white flex items-center justify-center">
+          <p class="">1</p>
+        </div>
+      </div>
+
       <!-- Heading -->
-      <h1 class="text-center font-black pt-6">About Me</h1>
+      <h1 class="text-center font-black text-xl text-white pb-3">About</h1>
 
       <!-- Image -->
       <div class="flex justify-center mt-6">
-        <div class="bg-gray-500 w-32 h-32 text-white">images</div>
+        <div class="bg-white w-32 h-32 text-neutral-900">images</div>
       </div>
 
       <!-- Body Text -->
       <div>
-        <p class="text-center">Currently learning web development on my way to cybersecurity.
+        <p class="text-center text-white text-sm">Currently learning web development on my way to cybersecurity.
         I build and self-host projects to better understand systems, networks, and how to secure them.
-        This site is where I share what I’ve made and learned.</p>
+        </p>
       </div>
 
       <!-- CV Link -->
       <div class="flex justify-center">
-        <button class="bg-gray-500 px-4 py-2 rounded-full text-white">click here</button>
+        <button class="bg-white px-4 py-2 rounded-full text-neutral-900">click here</button>
       </div>
 
     </div>
   </section>
 
   <!-- Skills Section-->
-  <section class="h-screen w-screen border-red-600 border-2">
+  <section class="h-screen w-screen px-6 pb-6">
 
     <!-- container -->
     <div class="space-y-6">
 
+      <!-- line -->
+      <div class="flex justify-center -my-3 pt-9">
+        <div class="w-[0.5px] h-16 bg-white opacity-25"></div>
+      </div>
+
+      <!-- circle w/ number -->
+      <div class="flex justify-center">
+        <div class="h-10 w-10 rounded-full bg-white flex items-center justify-center">
+          <p class="">2</p>
+        </div>
+      </div>
+
       <!-- Heading -->
-      <h1 class="text-center font-black pt-6">My Skills</h1>
+      <h1 class="text-center font-black text-xl text-white pb-3">Skills</h1>
 
       <!-- Body Text -->
       <div>
-        <p class="text-center">See fully what skills I have and perform, develop the projects for you.</p>
+        <p class="text-center text-white">See fully what skills I have and perform, develop the projects for you.</p>
       </div>
 
       <!-- Skills List -->
-      <div class="grid grid-cols-3 gap-3 mb-6">
+      <div class="grid grid-cols-3 gap-2 mb-6">
         <div class="mx-auto">
-          <div class="w-12 h-12 bg-amber-600"></div>
+          <div class="w-16 h-16 border-sky-600 border-2 rounded-xl text-neutral-900">Proxmox</div>
         </div>
         <div class="mx-auto">
-          <div class="w-12 h-12 bg-amber-600"></div>
+          <div class="w-16 h-16 border-sky-600 border-2 rounded-xl text-neutral-900">Linux</div>
         </div>
         <div class="mx-auto">
-          <div class="w-12 h-12 bg-amber-600"></div>
+          <div class="w-16 h-16 border-sky-600 border-2 rounded-xl text-neutral-900">Docker</div>
         </div>
         <div class="mx-auto">
-          <div class="w-12 h-12 bg-amber-600"></div>
+          <div class="w-16 h-16 border-sky-600 border-2 rounded-xl text-neutral-900">HTML5</div>
         </div>
         <div class="mx-auto">
-          <div class="w-12 h-12 bg-amber-600"></div>
+          <div class="w-16 h-16 border-sky-600 border-2 rounded-xl text-neutral-900">CSS</div>
         </div>
         <div class="mx-auto">
-          <div class="w-12 h-12 bg-amber-600"></div>
+          <div class="w-16 h-16 border-sky-600 border-2 rounded-xl text-neutral-900">Tailwind</div>
         </div>
         <div class="mx-auto">
-          <div class="w-12 h-12 bg-amber-600"></div>
+          <div class="w-16 h-16 border-sky-600 border-2 rounded-xl text-neutral-900"></div>
         </div>
         <div class="mx-auto">
-          <div class="w-12 h-12 bg-amber-600"></div>
+          <div class="w-16 h-16 border-sky-600 border-2 rounded-xl text-neutral-900"></div>
         </div>
         <div class="mx-auto">
-          <div class="w-12 h-12 bg-amber-600"></div>
+          <div class="w-16 h-16 border-sky-600 border-2 rounded-xl text-neutral-900"></div>
         </div>
       </div>
 
       <!-- Peoject Link -->
-      <div class="flex justify-center mb-6">
-        <button class="bg-gray-500 px-4 py-2 rounded-full text-white">click here</button>
+      <div class="flex justify-center">
+        <button class="bg-white px-4 py-2 rounded-full text-neutral-900">click here</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Project -->
+  <section class="h-[200vh] w-screen px-6 pb-6">
+    
+    <!-- line -->
+    <div class="flex justify-center pt-6">
+      <div class="w-[0.5px] h-16 bg-white opacity-25"></div>
+    </div>
+
+    <!-- circle w/ number -->
+    <div class="flex justify-center">
+      <div class="h-10 w-10 rounded-full bg-white flex items-center justify-center">
+        <p class="">3</p>
       </div>
     </div>
 
-  <!-- What I Do -->
-  </section>
-  <section class="h-screen w-screen border-red-600 border-2">
-    <h1>im in a container</h1>
+    <!-- Heading -->
+    <h1 class="text-center font-black text-xl text-white pt-6 pb-3 mb-6">Projects</h1>
+
+    <div class="grid grid-cols-1 gap-6">
+      <div class="h-52 w-full rounded-2xl p-4 border-white border-2 ">
+        <div class="h-3/4 w-full bg-white mb-4 rounded-xl"></div>
+        <div class="flex justify-center pb-4 mb-4">
+          <button class="bg-white px-4 py-2 rounded-full text-neutral-900">click here</button>
+          <button class="bg-white px-4 py-2 rounded-full text-neutral-900">click here</button>
+        </div>
+      </div>
+      <div class="h-52 w-full rounded-2xl p-4 border-white border-2 ">
+        <div class="h-3/4 w-full bg-white mb-4 rounded-xl"></div>
+        <div class="flex justify-center pb-4 mb-4">
+          <button class="bg-white px-4 py-2 rounded-full text-neutral-900">click here</button>
+          <button class="bg-white px-4 py-2 rounded-full text-neutral-900">click here</button>
+        </div>
+      </div>
+      <div class="h-52 w-full rounded-2xl p-4 border-white border-2 ">
+        <div class="h-3/4 w-full bg-white mb-4 rounded-xl"></div>
+        <div class="flex justify-center pb-4 mb-4">
+          <button class="bg-white px-4 py-2 rounded-full text-neutral-900">click here</button>
+          <button class="bg-white px-4 py-2 rounded-full text-neutral-900">click here</button>
+        </div>
+      </div>
+    </div>
   </section>
 
 
   <script src="/src/heroCanvas.js"></script>
+  <!-- <script src="/src/heroCanvasDots.js"></script> -->
 </body>
 </html>
