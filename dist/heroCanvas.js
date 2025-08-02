@@ -1,5 +1,5 @@
 const canvasDots = function () {
-  const canvas = document.querySelector('canvas'),
+  const canvas = document.getElementById('dot_link'),
     ctx = canvas.getContext('2d'),
     colorDot = [
       'rgb(81, 162, 233)',
@@ -27,67 +27,67 @@ const canvasDots = function () {
   const windowSize = window.innerWidth;
   let dots;
 
-  if (windowSize < 1600) {
+  if (windowSize > 1600) {
     dots = {
       nb: 600, // number of particles
       distance: 70, // max distance between particles for them to link
       d_radius: 300, // radius from mouse location that particles will link
       array: [],
     };
-  } else if (windowSize < 1300) {
+  } else if (windowSize > 1300) {
     dots = {
       nb: 575,
       distance: 60,
       d_radius: 280,
       array: [],
     };
-  } else if (windowSize < 1100) {
+  } else if (windowSize > 1100) {
     dots = {
-      nb: 0,
-      distance: 0,
-      d_radius: 0,
+      nb: 500,
+      distance: 55,
+      d_radius: 250,
       array: [],
     };
-  } else if (windowSize < 800) {
+  } else if (windowSize > 800) {
     dots = {
-      nb: 0,
-      distance: 0,
-      d_radius: 0,
+      nb: 350,
+      distance: 50,
+      d_radius: 400,
       array: [],
     };
-  } else if (windowSize < 700) {
+  } else if (windowSize > 700) {
     dots = {
-      nb: 0,
-      distance: 0,
-      d_radius: 0,
+      nb: 225,
+      distance: 45,
+      d_radius: 300,
       array: [],
     }; 
-  } else if (windowSize < 600) {
+  } else if (windowSize > 600) {
     dots = {
-      nb: 0,
-      distance: 0,
-      d_radius: 0,
+      nb: 200,
+      distance: 60,
+      d_radius: 150,
       array: [],
     };
-  } else if (windowSize < 650) {
+  } else if (windowSize > 650) {
     dots = {
-      nb: 0,
-      distance: 0,
-      d_radius: 0,
+      nb: 400,
+      distance: 50,
+      d_radius: 185,
       array: [],
     };
   } else if (windowSize > 500) {
     dots = {
-      nb: 0,
-      distance: 0,
-      d_radius: 0,
+      nb: 250,
+      distance: 20,
+      d_radius: 60,
       array: [],
     };
   } else {
     dots = {
-      nb: 0,
-      distance: 0,
-      d_radius: 0,
+      nb: 130,
+      distance: 35,
+      d_radius: 300,
       array: [],
     };
   }
@@ -186,7 +186,7 @@ const canvasDots = function () {
                 distanceRatio = 0;
               }
 
-              ctx.strokeStyle = `rgb(0, 132, 209), ${1 - distanceRatio})`;
+              ctx.strokeStyle = `rgb(81, 162, 233, ${1 - distanceRatio})`;
 
               ctx.stroke();
               ctx.closePath();
