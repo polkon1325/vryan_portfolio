@@ -5,7 +5,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "npx @tailwindcss/cli -i ./src/input.css -o ./src/styles.css --watch",
-    "build": "rm -rf ./dist && mkdir dist && npx tailwindcss -i ./src/input.css -o ./dist/styles.css --minify && cp ./src/index.html ./src/heroCanvas.js ./dist/"
+    "build": "rm -rf ./dist && mkdir dist && npx tailwindcss -i ./src/input.css -o ./dist/styles.css --minify && cp ./src/index.html ./src/heroCanvas.js ./dist/",
+    "deploy": "npm run build && gh-pages -d dist"
   },
   "keywords": [],
   "author": "",
@@ -14,8 +15,5 @@
   "dependencies": {
     "@tailwindcss/cli": "^4.1.11",
     "tailwindcss": "^4.1.11"
-  },
-  "devDependencies": {
-    "gh-pages": "^6.3.0"
   }
 }
