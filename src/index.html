@@ -8,14 +8,24 @@
 
 </head>
 
-<body class="bg-neutral-900">
+<!-- <style>
+  .no-scrollbar::-webkit-scrollbar {
+    z-index: 100;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none;
+  }
+</style> -->
+
+<body class="h-full m-0 bg-neutral-900 overflow-x-hidden">
 
   <!-- Navigation -->
   <nav class="container px-6">
   </nav>
 
   <!-- Home Section-->
-  <section class="h-screen w-screen p-6 flex flex-col justify-center">
+  <section class="h-svh w-svw p-6 flex flex-col justify-center">
     
     <canvas class="absolute top-0 left-0 -z-10" id="dot_link"></canvas>
 
@@ -48,7 +58,7 @@
 
 
   <!-- About Me Section-->
-  <section class="h-screen w-screen px-4 pb-4">
+  <section class="h-svh w-svw px-4 pb-4">
 
     <canvas class="absolute top-0 left-0 w-full h-full"></canvas>
 
@@ -95,7 +105,7 @@
   </section>
 
   <!-- Skills Section-->
-  <section class="h-screen w-screen px-4 pb-4">
+  <section class="h-svh w-svw px-4 pb-4">
 
     <!-- container -->
     <div class="space-y-6">
@@ -163,7 +173,7 @@
   </section>
 
   <!-- Project -->
-  <section class="h-[200vh] w-screen px-4 pb-4">
+  <section class="h-[200dvh] w-svw px-4 pb-4">
     
     <div class="space-y-6">
       
@@ -189,18 +199,20 @@
 
       <!-- Project Cards -->
       <div class="grid grid-cols-1 gap-6">
-        <div class="h-96 w-full rounded-2xl border-neutral-500 border-[1px] contain-content bg-black text-white">
+        <div class="h-96 w-full rounded-2xl border-neutral-500 border-[1px] contain-content text-white">
           <!-- Image Area -->
           <div class="rounded-l overflow-hidden">
             <a href="https://trydevstoretest.myshopify.com/">
-              <img src="VGTECH.png" alt="VGTECH" class="w-full h-auto" />
+              <img src="assets/VGTECH.png" alt="VGTECH" class="w-full h-auto" />
             </a>
           </div>
 
           <div class="p-4">
             <!-- Project Title -->
-            <div class="pb-4 flex">
+            <div class="pb-4 flex items-center">
               <h1 class="w-auto h-auto text-neutral-300 font-black text-2xl">VGTech</h1>
+
+              
               <!-- Badges -->
               <div class="ml-auto px-2 h-4 w-24 bg-neutral-500 rounded-sm">
                 <p class=" text-neutral-900 text-xs text-center font-bold">Shopify Store</p>
