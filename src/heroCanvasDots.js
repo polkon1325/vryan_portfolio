@@ -1,19 +1,19 @@
 const canvasDotsSecond = function () {
-  const canvas = document.getElementById('dots'),
-    ctx = canvas.getContext('2d'),
+  const canvas = document.getElementById("dots"),
+    ctx = canvas.getContext("2d"),
     colorDot = [
-      'rgb(81, 162, 233)',
-      'rgb(81, 162, 233)',
-      'rgb(81, 162, 233)',
-      'rgb(81, 162, 233)',
-      'rgb(255, 77, 90)',
+      "rgb(81, 162, 233)",
+      "rgb(81, 162, 233)",
+      "rgb(81, 162, 233)",
+      "rgb(81, 162, 233)",
+      "rgb(255, 77, 90)",
     ], // 80% of dots are blue. 20% pink
-    color = 'rgb(81, 162, 233)';
+    color = "rgb(81, 162, 233)";
 
   // ctx.globalAlpha = 0.8;
   canvas.width = document.body.scrollWidth;
   canvas.height = window.innerHeight;
-  canvas.style.display = 'block';
+  canvas.style.display = "block";
   // ctx.fillStyle = colorDot;
   // ctx.fillStyle = 'hsl(' + 360 * Math.random() + ', 50%, 50%)';
   ctx.lineWidth = 0.3;
@@ -56,7 +56,7 @@ const canvasDotsSecond = function () {
     this.colour = colorDot[Math.floor(Math.random() * colorDot.length)];
 
     if (window.innerWidth <= 600) {
-    this.y = Math.random() * window.innerHeight; // full vertical coverage
+      this.y = Math.random() * window.innerHeight; // full vertical coverage
     } else {
       this.y = Math.random() * canvas.height;
     }
@@ -161,7 +161,7 @@ const canvasDotsSecond = function () {
     dots.array[0].radius = 1.5;
 
     // first dot to be blue
-    dots.array[0].colour = '#51a2e9';
+    dots.array[0].colour = "#51a2e9";
 
     dot.line();
     dot.animate();
@@ -191,7 +191,6 @@ const canvasDotsSecond = function () {
     canvasDots();
     // console.log(yippe);
   };
-
 
   // // On touch for mobile
   // canvas.addEventListener('touchstart', function (e) {
@@ -226,7 +225,6 @@ const canvasDotsSecond = function () {
   //   dots.array[0].y = touch.pageY;
   // } catch {}
   // });
-
 };
 
 canvasDotsSecond();
